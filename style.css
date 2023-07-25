@@ -181,7 +181,7 @@ input:active{
         flex-direction: column;
     }
     .searchbar{
-        max-width: fit-content;
+        max-width: 50%;
     }
     .input-tag{
         background: none;
