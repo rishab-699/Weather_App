@@ -188,7 +188,7 @@ input:active{
         border: none;
         font-size: 1.6rem;
         color: #F1F2F3;
-        max-width:50%;
+        max-width:30%;
     }
     input::placeholder{
         font-size: 1.6rem;
