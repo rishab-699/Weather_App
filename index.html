@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEATHER APP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="rightcol">
+      <div class="menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="head">
+        <h1 class="heading">WEATHER</h1>
+      </div>
+    </div>
+      <div class="searchbar">
+        <img src="./img/SVG/Asset 6.svg" class="search-icon icon" alt="">
+        <input type="text" name="city" id="city" class="input-tag" placeholder="SEARCH">
+        <button type="submit" name="submit" id="submit" value="submit" onclick="getcity(this)">
+          <img src="./img/SVG/Asset 6.svg" class="search-icon" alt="">
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="main-head">
+        <h2 class="head"><span id="cityName"></span></h2>
+      </div>
+      <div class="weather">
+        <div class="img-container">
+          <img src="./img/SVG/sun.svg" id="weather" alt="">
+          <p><span id="cloudpct"></span></p>
+        </div>
+        <div class="temp">
+          <h3><span id="temp"></span><span id="degree">&#176;</span></h3>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="card">
+          <div class="head">
+              <p>WIND SPEED</p>
+          </div>
+          <div class="speed">
+            <div class="img">
+              <img src="./img/300ppi/windy@300x.png" alt="">
+            </div>
+            <div class="wind">
+              <h3><span id="wind_speed"></span> km/h</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="head">
+              <p>FEELS LIKE</p>
+          </div>
+          <div class="speed">
+            <div class="img">
+              <img src="./img/SVG/Asset 12.svg" alt="">
+            </div>
+            <div class="wind">
+              <h3><span id="feels_like"></span><span id="degree">&#176;</span> </h3>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="head">
+              <p>Humidity</p>
+          </div>
+          <div class="speed">
+            <div class="img">
+              <img src="./img/300ppi/windy@300x.png" alt="">
+            </div>
+            <div class="wind">
+              <h3><span id="humidity"></span>%</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<script src="app.js"></script>
+</body>
+</html>
