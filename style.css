@@ -181,13 +181,14 @@ input:active{
         flex-direction: column;
     }
     .searchbar{
-        max-width: 50%;
+        max-width: 90%;
     }
     .input-tag{
         background: none;
         border: none;
         font-size: 1.6rem;
         color: #F1F2F3;
+        max-width:50%;
     }
     input::placeholder{
         font-size: 1.6rem;
